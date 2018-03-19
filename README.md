@@ -4,7 +4,27 @@ Need a place to store your global values? Wonder where to put your knex instance
 
 **reagis** is just what you need. A simple key-value store designed to house your global values.
 
-## Getting started
+## Installation
+
+This is a [Node.js](https://nodejs.org/en/) module available through the
+[npm registry](https://www.npmjs.com/).
+
+Before installing, [download and install Node.js](https://nodejs.org/en/download/).
+Node.js 0.10 or higher is required.
+
+Installation is done using the
+[`npm install` command](https://docs.npmjs.com/getting-started/installing-npm-packages-locally):
+
+```bash
+$ npm install --save reagis
+```
+
+## Documentation
+
+* [Website and Documentation](https://nmtuan.space/reagis)
+* Checkout [API.md](https://github.com/rocketspacer/reagis/blob/master/API.md) for detailed references
+
+## Quick start
 
 Just require reagis and start setting/getting your values
 
@@ -61,6 +81,3 @@ class ModelRegistry extends Registry {
 // Instantiate
 const registry = new ModelRegistry();
 ```
-
-## API References
-Checkout [API.md](https://github.com/rocketspacer/reagis/blob/master/API.md) for detailed documentation
