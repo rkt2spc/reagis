@@ -1,0 +1,44 @@
+{
+  "name": "reagis",
+  "version": "0.0.1",
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "description": "Simple key-value registry to store your global values",
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "lint": "eslint --cache --ignore-path .gitignore src test",
+    "test": "npm run build:code && jest",
+    "build:code": "rm -rf lib && babel --ignore spec.js,test.js --out-dir lib src",
+    "build:docs": "rm -rf docs && jsdoc -c .jsdocrc.js && jsdoc2md 'src/**/!(*.test|*.spec).js' > API.md",
+    "prepublish": "npm run build:code"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rocketspacer/reagis.git"
+  },
+  "author": "Tuan Nguyen <nmtuan.dev@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rocketspacer/reagis/issues"
+  },
+  "homepage": "https://github.com/rocketspacer/reagis#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-preset-env": "^1.6.1",
+    "eslint": "^4.19.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.9.0",
+    "glob": "^7.1.2",
+    "jest": "^22.4.2",
+    "jsdoc": "^3.5.5",
+    "jsdoc-to-markdown": "^4.0.1",
+    "minami": "^1.2.3"
+  }
+}
