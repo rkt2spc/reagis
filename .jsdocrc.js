@@ -1,9 +1,10 @@
 module.exports = {
-  "plugins": [],
+  "plugins": ["plugins/markdown"],
   "recurse": true,
   "recurseDepth": 10,
   "source": {
-    "include": ["src"]
+    "include": ["src"],
+    "excludePattern": "\.test\.|\.spec\."
   },
   "sourceType": "module",
   "tags": {
