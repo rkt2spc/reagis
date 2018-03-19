@@ -1,6 +1,6 @@
 # reagis
 
-Need a place to store your global values? Wonder where to put your knex instance, your mongoose connection? How to deal with circular dependencies when declaring relationships in those ORMs?
+Need a place to store your global values? Wonder where to put your knex instance, your mongoose connection? Struggling to deal with circular dependencies when declaring relationships in ORMs?
 
 **reagis** is just what you need. A simple key-value store designed to house your global values.
 
@@ -63,4 +63,4 @@ const registry = new ModelRegistry();
 ```
 
 ## API References
-Checkout API.md for detailed documentation
+Checkout [API.md](https://github.com/rocketspacer/reagis/blob/master/API.md) for detailed documentation
