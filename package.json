@@ -11,7 +11,7 @@
   ],
   "scripts": {
     "lint": "eslint --cache --ignore-path .gitignore src test",
-    "test": "npm run build:code && jest",
+    "test": "npm run build:code && jest --coverage",
     "build:code": "rm -rf lib && babel --ignore spec.js,test.js --out-dir lib src",
     "build:docs": "rm -rf docs && jsdoc -c .jsdocrc.js && jsdoc2md 'src/**/!(*.test|*.spec).js' > API.md",
     "prepublishOnly": "npm run build:code"
