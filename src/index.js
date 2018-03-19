@@ -23,8 +23,11 @@ import Registry from './registry';
  */
 const registry = new Registry();
 
+const hihi = 1;
+
 /** Exports */
 export {
   Registry,
+  hihi,
   registry as default,
 };
