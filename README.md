@@ -1,21 +1,21 @@
-# registry
+# reagis
 
 Need a place to store your global values? Wonder where to put your knex instance, your mongoose connection? How to deal with circular dependencies when declaring relationships in those ORMs?
 
-**registry** is just what you need. A simple key-value store designed to house your global values.
+**reagis** is just what you need. A simple key-value store designed to house your global values.
 
 ## Getting started
 
-Just require registry and start setting/getting your values
+Just require reagis and start setting/getting your values
 
 ```javascript
 // config/knex.js
-const registry = require('registry');
+const registry = require('reagis');
 registry.set('knex', knex({ ... }));
 registry.set('bookshelf', registry.get('knex'));
 
 // models/user.js
-const registry = require('registry');
+const registry = require('reagis');
 const User = registry.get('bookshelf').Model.extends({
   tableName : 'users',
   stories   : function() {
@@ -32,7 +32,7 @@ module.exports = User;
 When your values are loaded from a files and need to be loaded all at once, or you're just too lazy doing too many `registry.set`
 
 ```javascript
-const registry = require('registry');
+const registry = require('reagis');
 const knex = require('knex')({ ... });
 const bookshelf = require('bookshelf')(knex);
 
@@ -47,7 +47,7 @@ registry.load({
 In case you want to extend or instantiate your own registry, just import the exposed Registry class.
 
 ```javascript
-const { Registry } = require('registry');
+const { Registry } = require('reagis');
 
 // Extending base Registry
 class ModelRegistry extends Registry {
