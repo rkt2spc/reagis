@@ -108,7 +108,7 @@ class Registry {
    * @returns {array} Return an array of all existing keys in insertion order
    */
   keys() {
-    return this._registry.keys();
+    return Array.from(this._registry.keys());
   }
 
   /**
