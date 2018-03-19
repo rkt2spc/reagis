@@ -27,7 +27,7 @@ const hihi = 1;
 
 /** Exports */
 export {
-  Registry,
+  Registry as Reagis,
   hihi,
   registry as default,
 };
