@@ -1,14 +1,25 @@
 {
   "name": "reagis",
   "version": "0.0.1",
-  "engines": {
-    "node": ">= 0.10.0"
-  },
-  "description": "Simple key-value registry to store your global values",
+  "description": "Simple key-value registry to store global values",
+  "keywords": [
+    "reagis",
+    "registry",
+    "global",
+    "key-value store"
+  ],
+  "author": "Tuan Nguyen <nmtuan.dev@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://rocketspacer.github.io/reagis",
+  "bugs": "https://github.com/rocketspacer/reagis/issues",
+  "repository": "github:rocketspacer/reagis",
   "main": "lib/index.js",
   "files": [
     "lib/**/!(*.test|*.spec).js"
   ],
+  "engines": {
+    "node": ">= 0.10.0"
+  },
   "scripts": {
     "lint": "eslint --cache --ignore-path .gitignore src test",
     "test": "jest",
@@ -20,16 +31,6 @@
     "build:docs": "rm -rf docs && jsdoc -c .jsdocrc.js && jsdoc2md 'src/**/!(*.test|*.spec).js' > API.md",
     "prepublishOnly": "npm run build:code"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/rocketspacer/reagis.git"
-  },
-  "author": "Tuan Nguyen <nmtuan.dev@gmail.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/rocketspacer/reagis/issues"
-  },
-  "homepage": "https://github.com/rocketspacer/reagis#readme",
   "dependencies": {},
   "devDependencies": {
     "babel": "^6.23.0",
