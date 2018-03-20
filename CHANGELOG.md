@@ -1,3 +1,8 @@
+1.0.2 / 2018-03-20
+===================
+
+* Update README.md add downloads badge and regenerate documentation
+
 1.0.1 / 2018-03-20
 ===================
 
