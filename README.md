@@ -2,6 +2,7 @@
 
 [![node](https://img.shields.io/node/v/reagis.svg)](https://www.npmjs.com/package/reagis)
 [![npm](https://img.shields.io/npm/v/reagis.svg)](https://www.npmjs.com/package/reagis)
+[![npm](https://img.shields.io/npm/dm/reagis.svg)](https://www.npmjs.com/package/reagis)
 [![Travis branch](https://img.shields.io/travis/rocketspacer/reagis.svg)](https://travis-ci.org/rocketspacer/reagis)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/6ada66d073f2b8d81ca6/test_coverage)](https://codeclimate.com/github/rocketspacer/reagis/test_coverage)
 [![Maintainability](https://api.codeclimate.com/v1/badges/6ada66d073f2b8d81ca6/maintainability)](https://codeclimate.com/github/rocketspacer/reagis/maintainability)
