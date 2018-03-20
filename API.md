@@ -41,11 +41,10 @@ Creates a new instance of Registry
 **Example**  
 ```js
 // CommonJS modules
-const Registry = require('registry/registry');
-const { Registry } = require('registry');
+const { Registry } = require('reagis');
 
 // ES2015 modules
-import { Registry } from 'registry';
+import { Registry } from 'reagis';
 
 // Instantiate
 const registry = new Registry();
@@ -157,8 +156,8 @@ Default exported registry instance
 **Example**  
 ```js
 // CommonJS modules
-const registry = require('registry');
+const registry = require('reagis');
 
 // ES2015 modules
-import registry from 'registry';
+import registry from 'reagis';
 ```

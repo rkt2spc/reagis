@@ -3,11 +3,10 @@
  *
  * @example
  * // CommonJS modules
- * const Registry = require('registry/registry');
- * const { Registry } = require('registry');
+ * const { Registry } = require('reagis');
  *
  * // ES2015 modules
- * import { Registry } from 'registry';
+ * import { Registry } from 'reagis';
  *
  * // Instantiate
  * const registry = new Registry();

@@ -13,10 +13,10 @@ import Registry from './registry';
  *
  * @example
  * // CommonJS modules
- * const registry = require('registry');
+ * const registry = require('reagis');
  *
  * // ES2015 modules
- * import registry from 'registry';
+ * import registry from 'reagis';
  *
  * @constant
  * @type {Registry}
