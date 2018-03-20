@@ -7,12 +7,16 @@
   "description": "Simple key-value registry to store your global values",
   "main": "lib/index.js",
   "files": [
-    "lib"
+    "lib/**/!(*.test|*.spec).js"
   ],
   "scripts": {
     "lint": "eslint --cache --ignore-path .gitignore src test",
-    "test": "npm run build:code && jest --coverage",
-    "build:code": "rm -rf lib && babel --ignore spec.js,test.js --out-dir lib src",
+    "test": "jest",
+    "test:src": "jest src",
+    "test:src:coverage": "jest --coverage src",
+    "test:build": "jest lib",
+    "test:build:coverage": "jest --coverage lib",
+    "build:code": "rm -rf lib && babel --out-dir lib src",
     "build:docs": "rm -rf docs && jsdoc -c .jsdocrc.js && jsdoc2md 'src/**/!(*.test|*.spec).js' > API.md",
     "prepublishOnly": "npm run build:code"
   },
@@ -32,6 +36,7 @@
     "babel-cli": "^6.26.0",
     "babel-plugin-add-module-exports": "^0.2.1",
     "babel-preset-env": "^1.6.1",
+    "codeclimate-test-reporter": "^0.5.0",
     "eslint": "^4.19.0",
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-plugin-import": "^2.9.0",
