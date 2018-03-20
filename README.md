@@ -1,5 +1,9 @@
 # reagis
 
+[![Travis branch](https://img.shields.io/travis/rocketspacer/reagis.svg?style=flat-square)](https://travis-ci.org/rocketspacer/reagis)
+[![Maintainability](https://api.codeclimate.com/v1/badges/6ada66d073f2b8d81ca6/maintainability)](https://codeclimate.com/github/rocketspacer/reagis/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/6ada66d073f2b8d81ca6/test_coverage)](https://codeclimate.com/github/rocketspacer/reagis/test_coverage)
+
 Need a place to store your global values? Wonder where to put your knex instance, your mongoose connection? Struggling to deal with circular dependencies when declaring relationships in ORMs?
 
 **reagis** is just what you need. A simple key-value store designed to house your global values.
