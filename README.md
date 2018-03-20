@@ -1,9 +1,11 @@
 # reagis
 
+[![node](https://img.shields.io/node/v/reagis.svg)](https://www.npmjs.com/package/reagis)
+[![npm](https://img.shields.io/npm/v/reagis.svg)](https://www.npmjs.com/package/reagis)
 [![Travis branch](https://img.shields.io/travis/rocketspacer/reagis.svg)](https://travis-ci.org/rocketspacer/reagis)
-[![NSP Status](https://nodesecurity.io/orgs/smalltalks/projects/7c381ffa-4108-4b3a-863f-e7b59dc799ab/badge)](https://nodesecurity.io/orgs/smalltalks/projects/7c381ffa-4108-4b3a-863f-e7b59dc799ab)
-[![Maintainability](https://api.codeclimate.com/v1/badges/6ada66d073f2b8d81ca6/maintainability)](https://codeclimate.com/github/rocketspacer/reagis/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/6ada66d073f2b8d81ca6/test_coverage)](https://codeclimate.com/github/rocketspacer/reagis/test_coverage)
+[![Maintainability](https://api.codeclimate.com/v1/badges/6ada66d073f2b8d81ca6/maintainability)](https://codeclimate.com/github/rocketspacer/reagis/maintainability)
+[![NSP Status](https://nodesecurity.io/orgs/smalltalks/projects/7c381ffa-4108-4b3a-863f-e7b59dc799ab/badge)](https://nodesecurity.io/orgs/smalltalks/projects/7c381ffa-4108-4b3a-863f-e7b59dc799ab)
 
 Need a place to store your global values? Wonder where to put your knex instance, your mongoose connection? Struggling to deal with circular dependencies when declaring relationships in ORMs?
 
