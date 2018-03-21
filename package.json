@@ -1,6 +1,6 @@
 {
   "name": "reagis",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Simple key-value registry to store global values",
   "keywords": [
     "reagis",
