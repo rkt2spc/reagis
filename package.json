@@ -21,6 +21,8 @@
     "node": ">= 0.10.0"
   },
   "scripts": {
+    "precommit": "npm run lint && npm run test:src:coverage",
+    "prepush": "npm run lint && npm run test:src:coverage",
     "lint": "eslint --cache --ignore-path .gitignore src test",
     "test": "jest",
     "test:src": "jest src",
@@ -42,6 +44,7 @@
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-plugin-import": "^2.9.0",
     "glob": "^7.1.2",
+    "husky": "^0.14.3",
     "jest": "^22.4.2",
     "jsdoc": "^3.5.5",
     "jsdoc-to-markdown": "^4.0.1",
