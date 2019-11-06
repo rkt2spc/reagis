@@ -60,3 +60,6 @@ typings/
 
 # lib is built from src before publishing
 lib/
+
+# npm dependencies version lock file
+package-lock.json

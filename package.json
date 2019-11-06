@@ -1,6 +1,6 @@
 {
   "name": "reagis",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Simple key-value registry to store global values",
   "keywords": [
     "reagis",
@@ -18,12 +18,10 @@
     "lib/**/!(*.test|*.spec).js"
   ],
   "engines": {
-    "node": ">= 0.10.0"
+    "node": ">= 8.0.0"
   },
   "scripts": {
-    "precommit": "npm run lint && npm run test:src:coverage",
-    "prepush": "npm run lint && npm run test:src:coverage",
-    "lint": "eslint --cache --ignore-path .gitignore src test",
+    "lint": "eslint --cache --ignore-path .gitignore src",
     "test": "jest",
     "test:src": "jest src",
     "test:src:coverage": "jest --coverage src",
@@ -35,18 +33,18 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "babel": "^6.23.0",
-    "babel-cli": "^6.26.0",
-    "babel-plugin-add-module-exports": "^0.2.1",
-    "babel-preset-env": "^1.6.1",
-    "eslint": "^4.19.1",
-    "eslint-config-airbnb-base": "^12.1.0",
-    "eslint-plugin-import": "^2.11.0",
-    "glob": "^7.1.2",
-    "husky": "^0.14.3",
-    "jest": "^22.4.3",
-    "jsdoc": "^3.5.5",
-    "jsdoc-to-markdown": "^4.0.1",
+    "@babel/cli": "^7.7.0",
+    "@babel/core": "^7.7.0",
+    "@babel/plugin-transform-modules-commonjs": "^7.7.0",
+    "@babel/preset-env": "^7.7.1",
+    "eslint": "^6.6.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "glob": "^7.1.5",
+    "husky": "^3.0.9",
+    "jest": "^24.9.0",
+    "jsdoc": "^3.6.3",
+    "jsdoc-to-markdown": "^5.0.2",
     "minami": "^1.2.3"
   }
 }

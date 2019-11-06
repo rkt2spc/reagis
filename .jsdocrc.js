@@ -14,6 +14,9 @@ module.exports = {
   "templates": {
     "cleverLinks": false,
     "monospaceLinks": false,
+    "default": {
+      "includeDate": false
+    }
   },
   "opts": {
     "recurse": true,

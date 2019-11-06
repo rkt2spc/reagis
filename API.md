@@ -38,6 +38,7 @@ Representing a key-value registry
 ### new Registry()
 Creates a new instance of Registry
 
+**Returns**: [<code>Registry</code>](#Registry) - The created Registry instance  
 **Example**  
 ```js
 // CommonJS modules

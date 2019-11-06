@@ -48,27 +48,31 @@
 
 
     <section class="readme">
-        <article><h1>reagis</h1><p><a href="https://www.npmjs.com/package/reagis"><img src="https://img.shields.io/node/v/reagis.svg" alt="node"></a>
+        <article><h1>reagis</h1>
+<p><a href="https://www.npmjs.com/package/reagis"><img src="https://img.shields.io/node/v/reagis.svg" alt="node"></a>
 <a href="https://www.npmjs.com/package/reagis"><img src="https://img.shields.io/npm/v/reagis.svg" alt="npm"></a>
 <a href="https://david-dm.org/rocketspacer/reagis"><img src="https://img.shields.io/david/rocketspacer/reagis.svg" alt="David"></a>
 <a href="https://www.npmjs.com/package/reagis"><img src="https://img.shields.io/npm/dm/reagis.svg" alt="npm"></a>
 <a href="https://travis-ci.org/rocketspacer/reagis"><img src="https://img.shields.io/travis/rocketspacer/reagis.svg" alt="Travis branch"></a>
 <a href="https://codeclimate.com/github/rocketspacer/reagis/test_coverage"><img src="https://api.codeclimate.com/v1/badges/6ada66d073f2b8d81ca6/test_coverage" alt="Test Coverage"></a>
-<a href="https://codeclimate.com/github/rocketspacer/reagis/maintainability"><img src="https://api.codeclimate.com/v1/badges/6ada66d073f2b8d81ca6/maintainability" alt="Maintainability"></a>
-<a href="https://nodesecurity.io/orgs/smalltalks/projects/7c381ffa-4108-4b3a-863f-e7b59dc799ab"><img src="https://nodesecurity.io/orgs/smalltalks/projects/7c381ffa-4108-4b3a-863f-e7b59dc799ab/badge" alt="NSP Status"></a></p>
-<p>Need a place to store your global values? Wonder where to put your knex instance, your mongoose connection? Struggling to deal with circular dependencies when declaring relationships in ORMs?</p>
-<p><strong>reagis</strong> is just what you need. A simple key-value store designed to house your global values.</p>
-<h2>Installation</h2><p>This is a <a href="https://nodejs.org/en/">Node.js</a> module available through the
-<a href="https://www.npmjs.com/">npm registry</a>.</p>
-<p>Before installing, <a href="https://nodejs.org/en/download/">download and install Node.js</a>.
-Node.js 0.10 or higher is required.</p>
+<a href="https://codeclimate.com/github/rocketspacer/reagis/maintainability"><img src="https://api.codeclimate.com/v1/badges/6ada66d073f2b8d81ca6/maintainability" alt="Maintainability"></a></p>
+<p>Need a place to store values that persist through out multiple modules? Wonder where to put your knex instance, your mongoose connection? Struggling to deal with circular dependencies when declaring relationships in ORMs?</p>
+<p><strong>reagis</strong> is just what you need. A simple key-value store designed to house your global singletons.</p>
+<h2>Installation</h2>
+<p>This is a <a href="https://nodejs.org/en">Node.js</a> module available on the
+<a href="https://www.npmjs.com/reagis">npm registry</a>.</p>
+<p>Before proceeding, make sure you have <a href="https://nodejs.org/en/download">Node.js</a> and <a href="https://www.npmjs.com">npm</a> installed.</p>
 <p>Installation is done using the
 <a href="https://docs.npmjs.com/getting-started/installing-npm-packages-locally"><code>npm install</code> command</a>:</p>
-<pre class="prettyprint source lang-bash"><code>$ npm install --save reagis</code></pre><h2>Documentation</h2><ul>
+<pre class="prettyprint source lang-bash"><code>npm install --save reagis
+</code></pre>
+<h2>Documentation</h2>
+<ul>
 <li><a href="https://nmtuan.space/reagis">Website and Documentation</a></li>
 <li>Checkout <a href="https://github.com/rocketspacer/reagis/blob/master/API.md">API.md</a> for detailed references</li>
 </ul>
-<h2>Quick start</h2><p>Just require reagis and start setting/getting your values</p>
+<h2>Quick start</h2>
+<p>Just require <strong>reagis</strong> and start setting/getting your values</p>
 <pre class="prettyprint source lang-javascript"><code>// config/knex.js
 const registry = require('reagis');
 registry.set('knex', knex({ ... }));
@@ -84,7 +88,10 @@ const User = registry.get('bookshelf').Model.extends({
 });
 
 registry.set('models.user', User);
-module.exports = User;</code></pre><h2>Bulk load</h2><p>When your values are loaded from a files and need to be loaded all at once, or you're just too lazy doing too many <code>registry.set</code></p>
+module.exports = User;
+</code></pre>
+<h2>Bulk load</h2>
+<p>When your values are loaded from files or need to be loaded all at once, or you're just too lazy to do call <strong>registry.set</strong> many times.</p>
 <pre class="prettyprint source lang-javascript"><code>const registry = require('reagis');
 const knex = require('knex')({ ... });
 const bookshelf = require('bookshelf')(knex);
@@ -92,7 +99,10 @@ const bookshelf = require('bookshelf')(knex);
 registry.load({
   knex      : knex,
   bookshelf : bookshelf,
-});</code></pre><h2>Custom registry</h2><p>In case you want to extend or instantiate your own registry, just import the exposed Registry class.</p>
+});
+</code></pre>
+<h2>Custom registry</h2>
+<p>In case you want to extend or instantiate your own registry, just import the exposed <strong>Registry</strong> class.</p>
 <pre class="prettyprint source lang-javascript"><code>const { Registry } = require('reagis');
 
 // Extending base Registry
@@ -105,7 +115,8 @@ class ModelRegistry extends Registry {
 }
 
 // Instantiate
-const registry = new ModelRegistry();</code></pre></article>
+const registry = new ModelRegistry();
+</code></pre></article>
     </section>
 
 
@@ -118,7 +129,7 @@ const registry = new ModelRegistry();</code></pre></article>
 <br class="clear">
 
 <footer>
-    Generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Wed Mar 21 2018 07:55:31 GMT+0700 (+07) using the Minami theme.
+    Generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.3</a> using the Minami theme.
 </footer>
 
 <script>prettyPrint();</script>

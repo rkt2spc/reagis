@@ -133,4 +133,3 @@ class Registry {
 
 /** Exports */
 export default Registry;
-
